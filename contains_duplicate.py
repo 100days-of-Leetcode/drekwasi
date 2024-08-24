@@ -5,10 +5,10 @@ Given an integer array nums, return true if any value appears at least twice in 
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        hashset = ()
+        hash_set = set()
 
         for num in nums:
-            if num in hashset:
+            if num in hash_set:
                 return True
-            hashset.add(num)
+            hash_set.add(num)
         return False
